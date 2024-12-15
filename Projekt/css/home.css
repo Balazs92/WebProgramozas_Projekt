@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+nav .nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+nav .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+nav .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav .menu li {
+    margin-right: 20px;
+}
+nav .menu a {
+    color: white;
+    text-decoration: none;
+}
+.content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.filter {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.filter select {
+    padding: 10px;
+    font-size: 16px;
+}
+.filter button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.filter button:hover {
+    background-color: #45a049;
+}
+.recipes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Pontosan három oszlop minden sorban */
+    gap: 20px; /* Távolság az elemek között */
+    margin: 0 auto; /* Középre igazítás, ha szükséges */
+}
+
+.recipe {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+.recipe img {
+    max-width: 100%;
+    height: auto;
+}
+.recipe h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+.recipe p {
+    font-size: 16px;
+    padding: 0 10px 10px;
+    color: #666;
+}
+.recipe .category {
+    font-style: italic;
+    font-size: 14px;
+    color: #888;
+}
+.recipe-details img.recipe-image {
+    max-width: 50%; /* A kép méretének csökkentése */
+    height: auto;
+    margin: 0 auto; /* Középre igazítás */
+    display: block;
+    border-radius: 10px; /* Szükség szerint kerekített sarkok */
+}
+.recipe-details h1 {
+    text-align: center; /* A szöveg vízszintesen középre igazítása */
+    font-size: 28px; /* A betűméret tetszés szerint változtatható */
+    font-weight: bold; /* Félkövér szöveg */
+    margin: 20px 0; /* Távolság a cím körül */
+    color: #333; /* Szöveg színe */
+}
+.rate-recipe,
+.comments-section {
+    text-align: center; /* Tartalom vízszintes középre igazítása */
+    margin: 20px auto; /* Távolság a szekció körül */
+    max-width: 600px; /* Maximális szélesség a szekcióhoz */
+    background-color: #f9f9f9; /* Lágy háttérszín */
+    padding: 20px; /* Belső térköz */
+    border-radius: 10px; /* Kerekített sarkok */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Árnyék */
+}
+
+.rate-recipe form,
+.comments-section form {
+    display: inline-block; /* Formok tartalma középen */
+    width: 100%; /* Teljes szélesség */
+}
+
+textarea {
+    width: 90%; /* Szélesség a formához */
+    max-width: 500px; /* Maximális szélesség */
+    height: 100px; /* Magasság */
+    padding: 10px; /* Belső térköz */
+    border: 1px solid #ccc; /* Szegély */
+    border-radius: 5px; /* Kerekített sarkok */
+    margin-bottom: 10px; /* Távolság az alábbi elemtől */
+    font-size: 14px;
+}
+
+button {
+    background-color: #4CAF50; /* Gomb színe */
+    color: white; /* Gomb szövegének színe */
+    border: none; /* Szegély eltávolítása */
+    padding: 10px 20px; /* Gomb mérete */
+    border-radius: 5px; /* Kerekített sarkok */
+    cursor: pointer; /* Mutató változik gomb fölött */
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049; /* Hover állapot */
+}
+.description {
+    font-size: 16px; /* Szöveg mérete */
+    line-height: 1.6; /* Sorok közötti távolság */
+    color: #555; /* Szöveg színe */
+    text-align: justify; /* Szöveg igazítása */
+    margin: 20px auto; /* Térköz a szöveg körül */
+    max-width: 800px; /* Maximális szélesség */
+    background-color: #f9f9f9; /* Lágy háttérszín */
+    padding: 15px; /* Belső térköz */
+    border-radius: 10px; /* Kerekített sarkok */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Árnyék */
+}
